@@ -21,7 +21,7 @@ mod tests {
     #[test]
     fn regular_structs() {
         // let green =
-        let green = ColorRegularStruct { 
+        let green = ColorRegularStruct {
             red: 0,
             green: 255,
             blue: 0,

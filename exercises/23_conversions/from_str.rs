@@ -48,11 +48,10 @@ impl FromStr for Person {
             return Err(ParsePersonError::ParseInt(e));
         }
 
-        Ok(Person{
+        Ok(Person {
             name: String::from(data[0]),
-            age: data[1].parse::<u8>().unwrap()
+            age: data[1].parse::<u8>().unwrap(),
         })
-
     }
 }
 

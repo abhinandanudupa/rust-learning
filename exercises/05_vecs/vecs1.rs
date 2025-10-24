@@ -10,7 +10,6 @@ fn array_and_vec() -> ([i32; 4], Vec<i32>) {
         v.push(i);
     }
 
-
     (a, v)
 }
 

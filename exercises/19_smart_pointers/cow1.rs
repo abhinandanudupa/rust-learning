@@ -38,7 +38,7 @@ mod tests {
         let vec = vec![0, 1, 2];
         let mut input = Cow::from(&vec);
         abs_all(&mut input);
-        assert!(matches!(input, Cow::Borrowed(_))); 
+        assert!(matches!(input, Cow::Borrowed(_)));
     }
 
     #[test]

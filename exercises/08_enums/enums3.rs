@@ -45,17 +45,16 @@ impl State {
 
     fn process(&mut self, message: Message) {
         match message {
-            Message::Resize{width, height} => {
+            Message::Resize { width, height } => {
                 self.resize(width, height);
-            },
+            }
             Message::Move(p) => {
                 self.move_position(p);
-            },
+            }
             Message::Echo(s) => self.echo(s),
             Message::ChangeColor(r, g, b) => self.change_color(r, g, b),
             Message::Quit => self.quit(),
         }
-
     }
 }
 

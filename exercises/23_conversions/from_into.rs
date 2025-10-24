@@ -40,9 +40,9 @@ impl From<&str> for Person {
         if data[1].parse::<u8>().is_err() {
             return Default::default();
         };
-        Person{
+        Person {
             name: String::from(data[0]),
-            age: data[1].parse::<u8>().unwrap()
+            age: data[1].parse::<u8>().unwrap(),
         }
     }
 }
